@@ -1,0 +1,27 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+    height: 80px;
+}
+nav ul/*mise en forme menue principale*/
+{  
+  list-style-type: none;  
+  display: flex;
+  width: 350px;  
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.barre_recherche
+{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 25%;
+    
+}
