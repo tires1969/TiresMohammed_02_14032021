@@ -18,10 +18,93 @@ nav ul/*mise en forme menue principale*/
 
 .barre_recherche
 {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 25%;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
     
+    
+}
+h5
+{
+  color: #969090;
+}
+/* barre de recherche*/
+.barre_recherche i 
+{
+    
+    background-color:#F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.barre_recherche input
+{
+  padding: 10Px;
+  border-style: none;
+  border: solid 2px #F2F2F2 ;
+  
+}
+.barre_recherche .btn_recherche
+{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px ;
+  background-color: #0065FC;
+  padding: 10px;
+}
+/*mise en forme des barres filtres*/
+.filtres
+{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section_filtre
+{
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  margin: 10px;
+}
+.barre_filtre
+{
+  margin-left: 30px;
+  border: solid 2px #F2F2F2;
+  border-radius: 20px;
+  
+  
+}
+.barre_filtre i
+{
+  background-color:#DEEBFF;
+  color: #0065FC;
+  padding: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+/* mise en forme titre info*/
+.info
+{
+  display: flex;
+  align-items: center;
+}
+.info i
+{
+  display: flex;
+  border: solid 2px #F2F2F2;
+  font-weight:900;
+  color: #0065FC;
+  width: 1.5em;
+  height:1.5em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color:#F2F2F2;
+  
+}
+/*mise en forme hebergement*/
+figure img
+{
+  height: 10em;
 }
