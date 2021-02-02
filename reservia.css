@@ -132,11 +132,11 @@ h5
   border-top-right-radius: 20px;
   
 }
-figure p
+.best_hebergement p
 {
   margin-left: 15px;
   margin-bottom: 5px;
-  margin-top: 5px;
+  margin-top: 0px;
 }
 figure i
 {
@@ -154,36 +154,37 @@ figure i
 .best_hebergement
 {
   display: flex;
-  flex-wrap: wrap;
-  
-  
+  flex-wrap: wrap;  
   
 }
+
 .hebergement_marseille
 {
-  padding: 5px;
+
+  padding-top: 50px;
+  padding-left: 40px;
   border-radius: 20px;
-  background-color:#F2F2F2;
+  background-color: #F2F2F2;
   margin: 8px;
   
-  
 }
+
 article
 {
   display: flex;
-  flex-wrap:nowrap; 
+  flex-wrap:nowrap;
+  justify-content: stretch; 
   
 }
 /*mise en forme aside*/
 aside
 {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color:#F2F2F2;
   border-radius: 25px;
-  padding: 5px;
-   
-    
+  justify-content: center;   
+  
 }
 aside figure img
 {
@@ -202,5 +203,39 @@ aside figure
   width: 20em;
   border: solid 2px;
   border-radius: 25px;
-  margin: 5px;
+  
 }
+aside span
+{
+  margin: 10px;
+}
+/*mise en forme section activités*/
+section
+{
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 25px;
+  background-color:#F2F2F2;
+}
+
+section figure
+{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 20em;
+  width: 13em;
+  border: solid 2px;
+  border-radius: 25px;
+  
+}
+section figure img
+{
+  height:15em;
+  width: 13em;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+    
+}
+
+
