@@ -1,36 +1,43 @@
-
-header 
-{
+#header {
   display: flex;
-  border: solid 2px;
   justify-content: space-between;
-  padding: 0px;
-  
 }
-/*mise en forme menue principale*/
-nav ul
-{  
-  list-style-type: none;  
+.logo {
+  width: 90px;
+}
+.nav {
   display: flex;
-  width: 350px;  
-  justify-content: space-around;
-  
-  margin: 4px;
-  height: 30px;
 }
-nav ul li
-{
-  width: 33%;
-  
-  height: 33px;
-  
+.menuAncre {
+  display: flex;
 }
-nav ul :hover :nth-child(1)
-{
-  
-  border-top:solid #0065FC 2PX;
+.liensMenu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /*(pour media quieries)*/
 }
-    
+.menuAncre a {
+  text-decoration: none;
+  color: black;
+  width: 8em;
+  text-align: center;
+}
+.menuAncre a:hover {
+  color: #0065fc;
+  border-top: 2px solid #0065fc;
+}
+.sinscrire {
+  display: flex;
+}
+.sinscrire a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0065fc;
+  width: 8em;
+  text-align: center;
+  border-top: none;
+}
+
 
 h5
 {
@@ -71,13 +78,14 @@ h5
 .section_filtre
 {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 10px;
 }
 .filtres
 {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 .article_filtre
 {
@@ -236,6 +244,45 @@ section figure img
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
     
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  margin-top: 60px;
+}
+.about ul{
+  list-style-type: none;
+  padding: 0;
+}
+.about ul li a{
+  text-decoration-line: none;
+  color: black;
+}
+.our_rooms ul{
+  list-style-type: none;
+  padding: 0 ;
+}
+.our_rooms ul li a{
+  text-decoration-line: none;
+  color: black;
+}
+.assistance ul{
+  list-style-type: none;
+  padding: 0;
+}
+.assistance ul li a{
+  text-decoration-line: none;
+  color: black;
+}
+footer ul li{
+  padding-bottom: 10px;
+}
+.footer{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 

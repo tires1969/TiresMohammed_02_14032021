@@ -8,19 +8,23 @@
         
     </head>
     <body>
-        <header>
-            <div class="logo_site">
-                <img src="logo-image/Reservia.svg" alt="logo du site" height="40px" width="60px"/>
+        <header id="header">
+            <div>
+              <img class="logo" src="logo-image/Reservia.svg" alt="logo site" />
             </div>
-            <nav>
-                <!--menu de navigation principale-->
-                <ul>
-                    <li><a href="#carte_hebergement">hebergements</a></li>
-                    <li><a href="#Activités">Activités</a></li>
-                    <li>s'inscrire</li>
-                </ul>
-            </nav>
+            <div class="nav">
+              <div class="menuAncre">
+                <div class="liensMenu">
+                  <a class="linkheberg" href="#hebergSection"><p>Hébergements</p> </a>
+                  <a class="linkactivity" href="#activitySection"><p>Activités</p></a>
+                </div>
+              </div>
+              <div class="sinscrire">
+                <a class="linksinscrire" href="index.html"><p>S'inscrire</p></a>
+              </div>
+            </div>
         </header>
+      
         <!--barre de recherche par ville-->
         <div class="section_recherche">
             <h3>trouver votre hebergement pour des vacances de reves</h3>
@@ -70,14 +74,16 @@
                 <div class="best_hebergement">
                     <figure>
                         <img src="logo-image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel de la cannebiere"/>
-                        <p>hotel de la cannebiere</p>
+                        <p>Auberge de la cannebiere</p>
                         <p>nuit a partir de 25€</p>
                         <i class="fa fa-star" ></i>
                         <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>  
                     </figure>
                     <figure>
                         <img src="logo-image/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
-                        <p>nuit a partir de 52</p>
+                        <p>Hotel du port</p>
+                        <p>nuit a partir de 52€</p>
                         <i class="fa fa-star"></i>
                     </figure>
                     <figure>
@@ -132,11 +138,11 @@
         </article> 
         <p>Activités à Marseille</p> 
         <section class="activites_marseille">
-            <figure>
+            <figure class="vieux_port">
                 <img src="image_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
                 <p>Vieux Port</p>    
             </figure>
-            <figure>
+            <figure class="fort_pomegues">
                 <img src="image_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
                 <p>Fort de pomegues</p>
             </figure>
@@ -156,7 +162,39 @@
                 <img src="image_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>    
                 <p>parc longchamp</p>
             </figure>
-        </section>    
+        </section> 
+        <footer>
+            <div class="footer">
+            <div class="about">
+              <div class="title">
+                <h3>A propos</h3>
+              </div>
+              <ul>
+                <li><a href="#">Fonctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
+              </ul>
+            </div>
+            <div class="our_rooms">
+              <div class="title">
+                <h3>Nos hébergements</h3>
+              </div>
+              <ul>
+                <li><a href="#">Charte qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+              </ul>
+            </div>
+            <div class="assistance">
+              <div class="title">
+                <h3>Assistance</h3>
+              </div>
+              <ul>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
+              </ul>
+            </div>
+            </div>      
+        </footer>   
             
         
     </body>
