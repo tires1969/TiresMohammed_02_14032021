@@ -8,7 +8,7 @@
 .nav {
   display: flex;
 }
-.menuAncre {
+.menuNav {
   display: flex;
 }
 .liensMenu {
@@ -16,13 +16,12 @@
   justify-content: space-between;
   width: 100%; /*(pour media quieries)*/
 }
-.menuAncre a {
+.menuNav a {
   text-decoration: none;
-  color: black;
   width: 8em;
   text-align: center;
 }
-.menuAncre a:hover {
+.menuNav a:hover {
   color: #0065fc;
   border-top: 2px solid #0065fc;
 }
@@ -32,7 +31,7 @@
 .sinscrire a {
   text-decoration: none;
   font-weight: bold;
-  color: #0065fc;
+  
   width: 8em;
   text-align: center;
   border-top: none;
@@ -141,54 +140,54 @@ h5
   
 }
 /*mise en forme hebergement*/
-
-.best_hebergement img
+main
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hotel
 {
   height: 8em;
   width: 14em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  
+  margin-bottom: 0px;
 }
 
-figure i
+i
 {
   color: #0065FC;
 }
 
 .best_hebergement figure
 {
-  margin: 6px;
+  
+  margin: 5px;
   padding: 6px;
   border-radius: 20px;
   background-color:white;
-
+  height: 15em;
+  
+}
+.hotel .p
+{
+  margin-left: 15px;
 }
 
 .best_hebergement
 {
   display: flex;
   flex-wrap: wrap;  
-  
+  justify-content: space-around;
 }
 
-.hebergement_marseille
+.hebergsection
 {
-
-  padding-top: 50px;
-  padding-left: 40px;
+  padding: 10px;
   border-radius: 20px;
   background-color: #F2F2F2;
-  margin: 8px;
-  
-}
-
-article
-{
-  display: flex;
-  flex-wrap:nowrap;
-  justify-content: stretch; 
-  
+  margin: 5px;
+  width: 70%;
 }
 /*mise en forme aside*/
 aside
@@ -198,7 +197,7 @@ aside
   background-color:#F2F2F2;
   border-radius: 25px;
   justify-content: center;   
-  
+  width: 30%;
 }
 aside figure img
 {
@@ -212,6 +211,8 @@ aside figure img
 aside figure
 {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   height: 10em;
   width: 20em;
@@ -261,25 +262,13 @@ footer{
   list-style-type: none;
   padding: 0;
 }
-.about ul li a{
-  text-decoration-line: none;
-  color: black;
-}
 .our_rooms ul{
   list-style-type: none;
   padding: 0 ;
 }
-.our_rooms ul li a{
-  text-decoration-line: none;
-  color: black;
-}
 .assistance ul{
   list-style-type: none;
   padding: 0;
-}
-.assistance ul li a{
-  text-decoration-line: none;
-  color: black;
 }
 footer ul li{
   padding-bottom: 10px;
