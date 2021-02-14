@@ -143,15 +143,22 @@ h5
 main
 {
   display: flex;
-  flex-wrap: wrap;
+  
+}
+h3
+{
+  
+  margin-bottom: auto;
+  border: solid;
 }
 .hotel
 {
-  height: 8em;
-  width: 14em;
+  height: 6em;
+  width: 13em;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 8px;
 }
 
 i
@@ -159,26 +166,32 @@ i
   color: #0065FC;
 }
 
-.best_hebergement figure
+.cadre_heberg
 {
   
   margin: 5px;
   padding: 6px;
   border-radius: 20px;
   background-color:white;
-  height: 15em;
+  height: 12em;
+  width: 13em;
   
 }
-.hotel .p
+.descr_hotel 
 {
-  margin-left: 15px;
+  margin-left: 10px;
+  
 }
-
+.descr_hotel .etoile,p  
+{
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
 .best_hebergement
 {
   display: flex;
   flex-wrap: wrap;  
-  justify-content: space-around;
+  
 }
 
 .hebergsection
@@ -186,8 +199,9 @@ i
   padding: 10px;
   border-radius: 20px;
   background-color: #F2F2F2;
-  margin: 5px;
-  width: 70%;
+  margin: 20px;
+  padding: 15px;
+  width: 60%;
 }
 /*mise en forme aside*/
 aside
@@ -197,33 +211,33 @@ aside
   background-color:#F2F2F2;
   border-radius: 25px;
   justify-content: center;   
-  width: 30%;
+  align-items: center;
+  
 }
-aside figure img
+.img_populaire
 {
-  height:10em;
-  width: 10em;
+  height:7em;
+  width: 8em;
+  margin: 6px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   
   
 }
-aside figure
+.heberg_populaire
 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   background-color: white;
-  height: 10em;
-  width: 20em;
+  height: 7em;
+  width: 15em;
+  padding: 5px;
   border: solid 2px;
   border-radius: 25px;
   
 }
-aside span
-{
-  margin: 10px;
-}
+
 /*mise en forme section activités*/
 section
 {

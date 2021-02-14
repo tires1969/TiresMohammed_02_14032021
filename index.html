@@ -4,7 +4,7 @@
         <meta charset="utf-8"/>
         <title>reservia</title>
         <link rel="stylesheet" href="reservia.css"/>
-        
+        <script src="https://kit.fontawesome.com/41026f3778.js" crossorigin="anonymous"></script>
         
     </head>
     <body>
@@ -81,71 +81,108 @@
         <section class="hebergsection">
             <h3>hébergements à marseille</h3>
             <div class="best_hebergement">
-                <figure>
+                <figure class="cadre_heberg">
                     <img class="hotel" src="logo-image/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="hotel de la cannebiere"/>   
                     <div class="descr_hotel">
-                        <p>Auberge de la cannebiere</p>
+                        <strong>Auberge de la cannebiere</strong>
                         <p>nuit a partir de 25€</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <div class="etoile">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                            
+                    </div>
                 </figure>
-                <figure>
+                <figure class="cadre_heberg">
                     <img  class="hotel"
-                        src="logo-image/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
-                        <p>Hotel du port</p>
+                        src="logo-image/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="hotel du port"/>
+                    <div class="descr_hotel">
+                        <strong>Hotel du port</strong>
                         <p>nuit a partir de 52€</p>
-                        <i class="fa fa-star"></i>
+                        <div class="etoile">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>        
                 </figure>
-                <figure>
+                <figure class="cadre_heberg">
                     <img class="hotel"
-                        src="logo-image/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
-                        <p>nuit a partir de 76</p>
-                        <i class="fa fa-star"></i>
+                        src="logo-image/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel les mouettes"/>
+                    <div class="descr_hotel">
+                        <strong>hotel des mouettes</strong>
+                        <p>nuit a partir de 76€</p>
+                        <div>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                            
                 </figure>
-                <figure>
+                <figure class="cadre_heberg">
                     <img class="hotel" 
-                        src="logo-image/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
-                        <p>nuit a partir de 80</p>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        src="logo-image/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="hotel de la mer"/>
+                    <div class="descr_hotel">    
+                        <strong>hotel de la mer</strong>
+                        <div class="etoile">
+                            <p>nuit a partir de 46€</p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
                 </figure>
-                <figure>
+                <figure class="cadre_heberg">
                     <img class="hotel"
-                        src="logo-image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
-                        <p>nuit a partir de 96</p>
-                        <i class="fa fa-star"></i>
+                        src="logo-image/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="auberge le panier"/>
+                        <div class="descr_hotel">    
+                            <strong>Auberge le panier</strong>
+                            <div class="etoile">
+                                <p>nuit a partir de 23€</p>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                        </div>
                 </figure>
-                <figure>
+                <figure class="cadre_heberg">
                     <img class="hotel"
-                         src="logo-image/aw-creative-VGs8z60yT2c-unsplash.jpg"/>
-                        <p>nuit a partir de 96</p>
-                        <i class="fa fa-star"></i>
+                         src="logo-image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="hotel chez amina"/>
+                    <div class="descr_hotel">    
+                        <strong>hotel de la mer</strong>
+                        <p>nuit a partir de 46€</p>
+                        <div class="etoile">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
                 </figure>
             </div>
+            <p>Afficher plus</p>
         </section>
             
         <aside>
-            <span>les plus populaires</span>
-            <i class="fas fa-chart-line fa-1x"></i>
-            <figure>
-                <img src="logo-image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>   
-                    <span>    
-                        <p>nuit a partir de 96</p>
-                        <i class="fa fa-star"></i>
-                    </span>
+            <div class="titre_populaire">
+                <span>les plus populaires</span>
+                <i class="fas fa-chart-line fa-1x"></i>
+            </div>
+            
+            <figure class="heberg_populaire">
+                <img class="img_populaire" src="logo-image/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>   
+                <div class="descr_populaire">    
+                    <p>nuit a partir de 96</p>
+                    <i class="fa fa-star"></i>
+                </div>
             </figure>
-            <figure>
-                <img src="logo-image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
+            <figure class="heberg_populaire">
+                <img class="img_populaire" src="logo-image/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
                     <span>
                         <p>nuit a partir de 96</p>
                         <i class="fa fa-star"></i>
                     </span>
             </figure>
-            <figure>
-                <img src="logo-image/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
+            <figure class="heberg_populaire">
+                <img class="img_populaire" src="logo-image/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
                     <span>
                         <p>nuit a partir de 96</p>
                         <i class="fa fa-star"></i>
