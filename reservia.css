@@ -107,9 +107,14 @@ h5
   border-left: none; 
   
 }
+.barre_filtre :hover
+{
+  box-shadow: 0px 0px 10px 6px #d6d5d5;
+  
+}
 .barre_filtre :nth-child(2)
 {
-  margin: 5px;
+  margin: 8px;
 }
 .icone
 {
@@ -142,8 +147,6 @@ h5
   justify-content: center;
   align-items: center;
   
-  
-  
 }
 /*mise en forme hebergement*/
 main
@@ -165,9 +168,6 @@ h3
   border-top-right-radius: 20px;
   margin-bottom: 8px;
 }
-
-
-
 .cadre_heberg
 {
   
@@ -178,6 +178,10 @@ h3
   height: 12em;
   width: 13em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
+}
+.best_hebergement a
+{
+  text-decoration: none;
 }
 .descr_hotel 
 {
@@ -197,7 +201,7 @@ h3
   justify-content: space-around;
 }
 
-.hebergsection
+#hebergsection
 {
   border-radius: 20px;
   background-color: #F2F2F2;
@@ -232,8 +236,7 @@ aside
   object-fit: cover;
   margin-left: 0px;
   border-top-left-radius: 25px;
-  border-bottom-left-radius: 25px;
-  
+  border-bottom-left-radius: 25px;  
   
 }
 .heberg_populaire
@@ -256,7 +259,6 @@ aside
    
 }
 
-
 /*mise en forme section activités*/
 
 .bloc_activite
@@ -266,6 +268,15 @@ aside
 .bloc_activite p
 {
   margin-left: 10px;
+}
+.bloc_activite a
+{
+  text-decoration: none;
+}
+#activite_marseille h3
+{
+  margin-left: 10px;
+  
 }
 .vieux_port
 {
@@ -398,14 +409,14 @@ aside
 
 /*mise en forme footer*/
 footer{
-  display: flex;
-  
+  display: flex; 
   background-color: #F2F2F2;
-  margin-top: 60px;
+  margin-top: 3em;
 }
+
 .about ul{
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
 }
 .nos_hebergements ul{
   list-style-type:none;
@@ -415,14 +426,62 @@ footer{
   list-style-type: none;
   padding: 0;
 }
-footer ul li{
+.footer ul li
+{
   padding-bottom: 10px;
 }
 .footer{
   width: 80%;
   display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
+  justify-content: space-around;
+  padding-top: 30px;
 }
-
-
+/* Règles applicables pour un écran d'une largeur allant de 480 pixels à 1126 pixels */
+@media screen and (min-width: 480px) and (max-width: 1124px){
+  body{
+      margin: 0;
+  }
+  header{
+      padding-left: 20px;
+      padding-right: 15px;   
+  }
+  main{
+      padding: 0;
+  }
+  .barre_recherche, .barre_Filter, .infos{
+    padding-left: 0;
+  }
+nav ul{
+    padding-left: 0;
+}
+.barre_filtre {
+    width: auto;
+    margin: 0 0 15px 25px;
+}
+main
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+.best_hebergement
+{
+  display: flex;
+  flex-wrap: wrap;  
+   
+}
+.hebergsection
+{
+  padding: 10px;
+}
+.cadre_heberg
+{
+  margin: 5px;
+}
+    
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    padding: 0 15px 0 15px;
+}
