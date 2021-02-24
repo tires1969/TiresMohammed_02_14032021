@@ -2,10 +2,12 @@
 body
 {
   font-family: 'Raleway',serif;
-  margin-left: 15px;
-  margin-right: 15px;
   padding: 10px;
   
+}
+p
+{
+  font-size: 12px;
 }
 #entete{
   display: flex;
@@ -28,7 +30,7 @@ nav ul{
   padding: 20px;
   margin-right: 15px;
   text-decoration-line: none;
-  color: rgb(51, 47, 47);
+  color: #0c0b0b;
 }
 #inscr{
   text-decoration-line: none;
@@ -68,9 +70,10 @@ h5
 }
 .barre_recherche input
 {
-  
   border: solid 2px #F2F2F2 ;
   height: 34px;
+  margin: 0px;
+  border-right: none;
 }
 .btn_recherche
 {
@@ -109,7 +112,10 @@ h5
 }
 .barre_filtre :hover
 {
-  box-shadow: 0px 0px 10px 6px #d6d5d5;
+  
+  background-color: aqua;
+  
+  /*box-shadow: 0px 0px 10px 6px #d6d5d5;*/
   
 }
 .barre_filtre :nth-child(2)
@@ -146,7 +152,7 @@ h5
   height: 20px;
   justify-content: center;
   align-items: center;
-  
+  margin-right: 10px;
 }
 /*mise en forme hebergement*/
 main
@@ -157,12 +163,11 @@ main
 h3
 {
   margin-left: 30px;
-
 }
 .hotel
 {
   height: 6em;
-  width: 13em;
+  width: 15em;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -176,10 +181,11 @@ h3
   border-radius: 20px;
   background-color:white;
   height: 12em;
-  width: 13em;
+  width: 15em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
+  
 }
-.best_hebergement a
+.desscr_hotel 
 {
   text-decoration: none;
 }
@@ -188,11 +194,7 @@ h3
   margin-left: 10px;
   
 }
-.descr_hotel .etoile,p  
-{
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
+
 .best_hebergement
 {
   display: flex;
@@ -213,9 +215,10 @@ h3
 .titre_populaire
 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  margin-top: 15px;
+  margin-right: 45px;
 }
 .populaires
 {
@@ -263,7 +266,10 @@ aside
 
 .bloc_activite
 {
-  display: flex;  
+  display: flex;
+  flex-wrap: wrap;
+    
+  
 }
 .bloc_activite p
 {
@@ -287,12 +293,12 @@ aside
   width: 16em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+  
 }
 .img_port
 {
   width: 16em;
-  height: 23em;
+  height: 22em;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -304,15 +310,15 @@ aside
   flex-direction: column;
   background-color: white;
   height: 13em;
-  width: 16em;
+  width: 17em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+  
 }
 .img_pomegues
 {
   height: 10em;
-  width: 16em;
+  width: 17em;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -324,17 +330,17 @@ aside
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 10em;
-  width: 16em;
+  height: 11em;
+  width: 17em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+  
 }
 .img_frioul
 {
   object-fit: cover;
   height: 7em;
-  width: 16em;
+  width: 17em;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -344,14 +350,14 @@ aside
   flex-direction: column;
   background-color: white;
   height: 26em;
-  width: 16em;
+  width: 17em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+
 }
 .img_calanques
 {
-  width: 16em;
+  width: 17em;
   height: 23em;
   object-fit: cover;
   border-top-left-radius: 25px;
@@ -363,17 +369,17 @@ aside
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 10em;
-  width: 18em;
+  height: 11em;
+  width: 17em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+  
 }
 .img_garde
 {
   object-fit: cover;
   height: 7em;
-  width: 18em;
+  width: 17em;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -383,16 +389,16 @@ aside
   flex-direction: column;
   background-color: white;
   height: 13em;
-  width: 18em;
+  width: 17em;
   box-shadow: 0px 0px 10px 6px #d6d5d5;
   border-radius: 25px;
-  margin: 20px;
+  
 }
 .img_longchamp
 {
   object-fit: cover;
   height: 10em;
-  width: 18em;
+  width: 17em;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -431,57 +437,169 @@ footer{
   padding-bottom: 10px;
 }
 .footer{
-  width: 80%;
+  width: 75%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; 
   padding-top: 30px;
 }
-/* Règles applicables pour un écran d'une largeur allant de 480 pixels à 1126 pixels */
-@media screen and (min-width: 480px) and (max-width: 1124px){
-  body{
-      margin: 0;
+
+
+/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+@media screen and (min-width: 375px) and (max-width: 667px){
+  body {
+    margin: 0px;
+    padding: 0px;
   }
-  header{
-      padding-left: 20px;
-      padding-right: 15px;   
-  }
-  main{
-      padding: 0;
-  }
-  .barre_recherche, .barre_Filter, .infos{
-    padding-left: 0;
-  }
-nav ul{
-    padding-left: 0;
-}
-.barre_filtre {
-    width: auto;
-    margin: 0 0 15px 25px;
-}
-main
-{
-  display: flex;
-  flex-wrap: wrap;
-}
-.best_hebergement
-{
-  display: flex;
-  flex-wrap: wrap;  
-   
-}
-.hebergsection
-{
-  padding: 10px;
-}
-.cadre_heberg
-{
-  margin: 5px;
-}
+  #entete , header
+  { 
+
+    margin-left: 0px;
+    padding-left: 0px;
     
-.footer {
-    width: 100%;
+  }
+  #logo {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+
+  }
+  #entete
+  {
     display: flex;
-    justify-content: space-between;
-    font-size: 0.85em;
-    padding: 0 15px 0 15px;
-}
+    flex-wrap:wrap;
+  }
+  nav
+  {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    font-size: 18px;
+    
+  }
+  #inscription
+  {
+    position: relative;
+    bottom: 40px;
+    left: 220px;
+  }
+  
+  nav ul
+  {
+    display: flex;
+    padding: 0px;
+  }
+    li 
+    {
+      justify-content: center;
+      width: 200px;
+    }
+    nav ul li :hover { 
+      border-top: none;
+      border-bottom-width: 4px solid #0065FC;
+   } 
+  
+  .section_recherche
+  {
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .recherche
+  {
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-left: 5px;
+    padding-top: 5px;
+  }
+  
+  .section_filtre {
+    flex-direction: column;
+    
+  }
+  .section_filtre p
+  {
+    position: relative;
+    right: 140px;
+    font-size: 16px;
+  } 
+
+  
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0%;
+  }
+  
+  .populaires
+  {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px;
+  
+  }
+  aside
+  {
+    align-items: center;
+    
+  }
+  #hebergsection
+  {
+    margin: 0px;
+    border-radius: 0px;
+    background-color: white;
+    width: 80%;
+    
+  }
+  .best_hebergement
+  {
+    align-items: center;
+    
+  }
+  .bloc_activite
+  {
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+  }
+  .bloc_activite figure
+  {
+    width: 18em;
+    height: 10em;
+    margin-left: 0px;
+  } 
+  .img_frioul,.img_calanques,.img_garde,.img_longchamp,.img_pomegues,.img_port
+  {
+    height: 7em;
+    width: 18em;
+    object-fit: cover;
+  }
+  .bloc1 , .bloc2
+  {
+    margin: 40px;
+  }
+  /* mise en forme footer*/
+  footer
+  {
+    margin-top: 0px;
+    padding-left: 15px;
+  }
+  .about
+  {
+    display: block;
+    width: 90%;
+     border: solid;
+  }
+
+
+  .footer{
+    display: flex; 
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-top: 0px;
+  }
+  
+  
+  
+    }
