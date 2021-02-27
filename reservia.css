@@ -2,7 +2,6 @@
 body
 {
   font-family: 'Raleway',serif;
-  padding: 10px;
   
 }
 p
@@ -419,6 +418,10 @@ footer{
   background-color: #F2F2F2;
   margin-top: 3em;
 }
+.about
+{
+  margin-left: 30px;
+}
 
 .about ul{
   list-style-type: none;
@@ -443,13 +446,16 @@ footer{
   padding-top: 30px;
 }
 
-
 /* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
-@media screen and (min-width: 375px) and (max-width: 667px){
+@media all and (min-width:705px) and (max-width: 1024px){
+  
+/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+@media all and (max-width: 700px){
   body {
     margin: 0px;
     padding: 0px;
   }
+  
   #entete , header
   { 
 
@@ -463,15 +469,12 @@ footer{
     bottom: 5px;
 
   }
-  #entete
+  
+  nav ul 
   {
-    display: flex;
-    flex-wrap:wrap;
-  }
-  nav
-  {
-    display: flex;
-    flex-wrap: wrap-reverse;
+    position: relative;
+    top: 60px;
+    
     font-size: 18px;
     
   }
@@ -479,7 +482,7 @@ footer{
   {
     position: relative;
     bottom: 40px;
-    left: 220px;
+    left: 80px;
   }
   
   nav ul
@@ -490,11 +493,11 @@ footer{
     li 
     {
       justify-content: center;
-      width: 200px;
+      
     }
     nav ul li :hover { 
       border-top: none;
-      border-bottom-width: 4px solid #0065FC;
+      border-bottom: 4px solid #0065FC;
    } 
   
   .section_recherche
@@ -507,7 +510,6 @@ footer{
   {
     justify-content: center;
     align-items: center;
-    width: 90%;
     margin-left: 5px;
     padding-top: 5px;
   }
@@ -533,7 +535,7 @@ footer{
   
   .populaires
   {
-    width: 90%;
+    
     justify-content: center;
     align-items: center;
     border-radius: 0px;
@@ -599,7 +601,4 @@ footer{
     background-color: #F2F2F2;
     margin-top: 0px;
   }
-  
-  
-  
-    }
+ }
