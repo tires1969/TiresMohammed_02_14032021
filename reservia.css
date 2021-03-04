@@ -188,12 +188,9 @@ h3
   
 }
 
-.descr_hotel 
+.descr_hotel  
 {
-  text-decoration-line: none;
-  text-decoration: none;
-  margin-left: 10px;
-  
+  margin-left: 10px; 
 }
 
 .best_hebergement
@@ -214,6 +211,7 @@ h3
   border-radius: 20px;
   background-color: #F2F2F2;
   margin-right: 20px;
+  margin-left:10px ;
   
   
 }
@@ -223,14 +221,14 @@ h3
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-right: 45px;
 }
 .populaires
 {
   background-color:#F2F2F2;
   border-radius: 25px;
-   
+  margin-right: 10px; 
 }
 aside
 {
@@ -238,6 +236,7 @@ aside
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .img_populaire
 {
@@ -271,17 +270,17 @@ aside
 
 /*mise en forme section activités*/
 
-.bloc_activite
+#bloc_activite
 {
-  display: flex;  
-
+  display: flex; 
+  
 }
-.bloc_activite p
+#bloc_activite p
 {
   margin-left: 10px;
   font-size: 14px;
 }
-.bloc_activite a
+#bloc_activite a
 {
   text-decoration: none;
 }
@@ -453,7 +452,71 @@ footer{
   padding-top: 30px;
   margin-left: 30px;
 }
+/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+@media all and (max-width: 1024px){
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px;
+    padding: 0%;
+  }
+  aside
+  { 
+    flex-direction: row;
+    justify-content: center;
+  }
+  figure .heberg_populaire
+  {
+    margin: 10px;
+  }
+  .populaires
+  {
+    margin: 10px;
+  }
   
+  .titre_populaire
+  {
+    justify-content: space-around;
+  }
+.img_populaire
+  {
+  height:10em;
+  width: 12em;
+  object-fit: cover;
+  margin-left: 0px;
+  border-top-left-radius: 25px;
+  border-top-right-radius:25px ;
+  border-bottom-left-radius:0px;  
+  
+}
+.heberg_populaire
+{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 5px;
+  height: 18em;
+  width: 200px;
+  box-shadow: 0px 0px 10px 6px #d6d5d5;
+  border-radius: 25px;
+  
+}
+.descr_populaire
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+   
+} 
+#bloc_activite
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+}
+ }
 /* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
 @media all and (max-width: 700px){
   #entete
@@ -471,16 +534,19 @@ footer{
       top: 15px;
       right: 10px;
      }
-  nav ul li
-  {
-    width: 150px;
-  }
   nav ul{
       padding: 20px 0 20px 0;
       width: 100%;
       justify-content: space-around;
       border-bottom: 4px solid #F2F2F2;
+      
     }
+  .activites , .heberg
+  {
+    margin-right: 0px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
   nav li a:hover{
     color: #0065FC;
     border-bottom: 2px solid #0065FC;
@@ -529,22 +595,20 @@ footer{
   {
     margin: 0px;
     border-radius: 0px;
-    background-color: white;
-    
-    
+    background-color: white;  
   }
   .best_hebergement
   {
     align-items: center;
   }
-  .bloc_activite
+  #bloc_activite
   {
     flex-direction: column;
     align-items: center;
     padding-left: 40px;
     
   }
-  .bloc_activite figure
+  #bloc_activite figure
   {
     width: 18em;
     height: 10em;
@@ -566,7 +630,6 @@ footer{
   .nos_hebergements , .about
   {
     display: block;
-    
    }
 
   .footer{
