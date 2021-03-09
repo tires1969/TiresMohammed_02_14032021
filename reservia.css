@@ -2,7 +2,12 @@
 body
 {
   font-family: 'Raleway',serif;   
-  margin: 0px; 
+   margin: 0px; 
+}
+.container-site
+{
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 #entete{
@@ -88,14 +93,16 @@ h5
   height:40px;
   width: 90px;
 }
-.fas fa-search
+.icon
 {
   display: none;
 }
+
 /*mise en forme des barres filtres*/
 .section_filtre
 {
   display: flex;  
+  flex-wrap: wrap;
   align-items: center;
 }
 .section_filtre p
@@ -325,7 +332,6 @@ h3
 }
 .img_port,.img_calanques
 {
-  width: 3O0px;
   height: 450px;
   object-fit: cover;
   border-top-left-radius: 25px;
@@ -346,7 +352,6 @@ h3
 .img_pomegues
 {
   height: 200px;
-  width: 300px;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -368,7 +373,6 @@ h3
 {
   object-fit: cover;
   height: 150px;
-  width: 300px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -388,7 +392,6 @@ h3
 {
   object-fit: cover;
   height: 150px;
-  width: 300px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
@@ -406,7 +409,6 @@ h3
 .img_longchamp
 {
   height: 200px;
-  width: 300px;
   object-fit: cover;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -457,6 +459,15 @@ footer{
   padding-top: 30px;
   margin-left: 30px;
 }
+/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+@media all and (max-width : 1550px){
+   .container-site
+   {
+     margin-right: inherit;
+     margin-left: inherit;
+   }
+  
+   }
 /* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
 @media all and (min-width : 701px) and (max-width: 1024px){
   main {
@@ -540,6 +551,10 @@ footer{
       border-bottom: 4px solid #F2F2F2;
       
     }
+    .icon
+    {
+      display :flex;  
+    }
   .text
   {
     display: none;
@@ -565,15 +580,7 @@ footer{
   {
     margin-left: 0px;
      }
-  .section_filtre {
-    flex-direction: column; 
-  }
-  .section_filtre p
-  {
-    position: relative;
-    right: 140px;
-    font-size: 16px;
-  } 
+  
 
   main {
     display: flex;
