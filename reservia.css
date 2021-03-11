@@ -4,12 +4,6 @@ body
   font-family: 'Raleway',serif;   
    margin: 0px; 
 }
-.container-site
-{
-  margin-left: 140px;
-  margin-right: 140px;
-}
-
 #entete{
   display: flex;
   justify-content: space-between;
@@ -25,7 +19,6 @@ nav{
 nav ul{
   display: flex;
   list-style-type: none;
-  
 }
 .heberg, .activites
 {
@@ -45,13 +38,12 @@ nav li :hover{
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
-
 h5
 {
   margin: 10px;
   color: #969090;
 }
-/* barre de recherche*/
+/*----- barre de recherche-------*/
 .recherche
 {
   margin-left: 20px;
@@ -78,7 +70,6 @@ h5
   border: solid 2px #F2F2F2 ;
   height: 34px;
   padding-left:10px;
-  margin: 0px;
   border-right: none;
 }
 .btn_recherche
@@ -93,12 +84,12 @@ h5
   height:40px;
   width: 90px;
 }
-.icon
+.icon /* propriete pour loupe bouton recherche*/
 {
   display: none;
 }
 
-/*mise en forme des barres filtres*/
+/*--------mise en forme des recherches par categorie-------*/
 .section_filtre
 {
   display: flex;  
@@ -146,7 +137,7 @@ h5
   padding: 3px;
   border-radius: 50%;
 }
-/* mise en forme titre info*/
+/*---------- mise en forme titre info----------*/
 .info
 {
   display: flex;
@@ -166,7 +157,7 @@ h5
   align-items: center;
   margin-right: 10px;
 }
-/*mise en forme hebergement*/
+/*-------mise en forme annonce hebergement-------*/
 main
 {
   display: flex;
@@ -175,7 +166,7 @@ h3
 {
   margin-left: 30px;
 }
-.hotel
+.img_hotel
 {
   height: 6em;
   width: 15em;
@@ -203,18 +194,11 @@ h3
 {
   margin-top: 8px;
 }
-
-.best_hebergement a
-{
-  text-decoration-line: none;
-  color: black;
-}
 .best_hebergement
 {
   display: flex;
   flex-wrap: wrap;  
   justify-content: center;
-  justify-content: space-around;
 }
 
 #hebergsection
@@ -229,7 +213,7 @@ h3
   color: #0c0b0b;
   text-decoration-line: none;
 }
-/*mise en forme aside*/
+/*-------mise en forme aside heberg populaires---------*/
 .titre_populaire
 {
   display: flex;
@@ -249,8 +233,7 @@ aside
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  
+
 }
 .img_populaire
 {
@@ -294,7 +277,7 @@ aside a
   color: #0c0b0b; 
 }
 
-/*mise en forme section activités*/
+/*--------mise en forme section activités---------*/
 
 #bloc_activite
 {
@@ -425,7 +408,7 @@ h3
   flex-direction: column;
 }
 
-/*mise en forme footer*/
+/*--------mise en forme footer----------*/
 footer{
   display: flex; 
   background-color: #F2F2F2;
@@ -459,16 +442,21 @@ footer{
   padding-top: 30px;
   margin-left: 30px;
 }
-/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
-@media all and (max-width : 1550px){
-   .container-site
+/* Règles applicables pour un écran d'une largeur a partir de 1550px pixels à 667 pixels */
+@media all and (min-width : 1550px){
+   body
    {
-     margin-right: inherit;
-     margin-left: inherit;
+     margin-right: 150px;
+     margin-left: 150px;
    }
-  
+   .best_hebergement
+   {
+     display: flex;
+     justify-content: space-around;
+     padding: 80px;
    }
-/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+   }
+/* Règles applicables pour un écran d'une largeur allant de 701 pixels à 1024 pixels */
 @media all and (min-width : 701px) and (max-width: 1024px){
   main {
     display: flex;
@@ -527,7 +515,7 @@ footer{
 }
 
  }
-/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 667 pixels */
+/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 700 pixels */
 @media all and (max-width: 700px){
   #entete
   {
@@ -551,7 +539,7 @@ footer{
       border-bottom: 4px solid #F2F2F2;
       
     }
-    .icon
+  .icon
     {
       display :flex;  
     }
@@ -580,7 +568,6 @@ footer{
   {
     margin-left: 0px;
      }
-  
 
   main {
     display: flex;
@@ -610,10 +597,7 @@ footer{
     border-radius: 0px;
     background-color: white;  
   }
-  .best_hebergement
-  {
-    align-items: center;
-  }
+  
   #bloc_activite
   {
     flex-direction: column;
@@ -640,7 +624,7 @@ footer{
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
   }
-  /* mise en forme footer*/
+  /*--- mise en forme footer---*/
   
   .nos_hebergements , .about
   {
