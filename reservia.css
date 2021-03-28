@@ -4,13 +4,15 @@ body
   font-family: 'Raleway',serif;   
   max-width: 1640px;
   width: 100%;
+  margin: auto;
+}
+header{
+  padding: 0 20px 0 20px;
 }
 #entete{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
 }
 nav{
   display: flex;
@@ -20,30 +22,31 @@ nav{
 nav ul{
   display: flex;
   list-style-type: none;
+  margin: 0px ;
 }
-.heberg, .activites
-{
+.lien_hebergements , .lien_activites{
   padding: 20px;
   margin-right: 15px;
   text-decoration-line: none;
-  color: #0c0b0b;
+  color: rgb(51, 47, 47);
 }
-
 #inscr{
   text-decoration-line: none;
   padding: 20px;
   color: #0065FC;
   font-weight: bold;
 }
-nav li :hover{
+nav li a:hover{
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
-h5
-{
-  margin: 10px;
-  color: #969090;
+header h2{
+  margin-bottom: 0;
 }
+header p{
+  margin-top: 16px;
+}
+
 /*----- barre de recherche-------*/
 .recherche
 {
@@ -197,7 +200,7 @@ figure
   margin: 10px;
    }
 .best_hebergement .descr_hotel ,h4{
-  margin: 10px -1px 10px 5px;
+  margin: 0px -1px 10px 5px;
 }
 .best_hebergement .descr_hotel, p{
   margin: 10px 10px 0px 5px;
@@ -298,14 +301,15 @@ figure
 {
   margin: 20px;
 }
-.titre_activities{
-    margin-top: 60px;
+.titre_activites
+{
+  margin-top: 30px;
 }
-.marseille_activities{
+.marseille_activites{
     display: flex;
     justify-content: space-between;
 }
-.marseille_activities .lien_vieux_port{
+.lien_port{
     text-decoration-line: none;
     color: black;
     width: 22%;
@@ -422,54 +426,57 @@ figure
 }
 
 /*--------mise en forme footer----------*/
-footer
-{
-  background-color: #F2F2F2;
-  margin-top: 3em;
-}
-.footer{
+footer{
   display: flex;
-  justify-content: space-around; 
-  width: 100%;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  margin-top: 60px;
 }
-.titre p
-{
-  font-size: 16px;
-  font-weight: bold;
-}
-.about ul{
+.a_propos ul{
   list-style-type: none;
-  padding: 0px;
+  padding: 0;
 }
+
 .nos_hebergements ul{
-  list-style-type:none;
+  list-style-type: none;
   padding: 0 ;
 }
+
 .assistance ul{
   list-style-type: none;
   padding: 0;
 }
-.footer ul li
-{
+
+footer ul li{
   padding-bottom: 10px;
 }
 .footer{
-  width: 75%;
+  width: 80%;
   display: flex;
-  justify-content: space-between; 
-  padding-top: 30px;
-  margin-left: 30px;
+  justify-content: space-between;
+  padding: 20px 0 0 20px;
 }
-/* Règles applicables pour un écran d'une largeur allant de 701 pixels à 1024 pixels */
-@media all and (min-width : 701px) and (max-width: 1124px){
-  body
-  {
+/* Règles applicables pour un écran d'une largeur allant de 561 pixels à 1124 pixels */
+@media all and (min-width : 561px) and (max-width: 1124px){
+  body{
+    margin: 0;
+    }
+  header{
+    padding-left: 20px;
+    padding-right: 15px;   
+  }
+  main{
     margin: 0px;
   }
-  main {
-    width: 100%;
-    margin: 0px;
-  }
+nav ul{
+    padding-left: 0;
+}
+.lien_hebergements, .lien_activites{
+    padding: 10px;
+}
+#inscr{
+    padding: 10px;
+}
   #hebergsection
   {
     width: 100%;
@@ -479,7 +486,7 @@ footer
   }
   #hebergsection a
   {
-    width: 35%;
+    width: 45%;
     margin-bottom: 30px;
   }
   .best_hebergement
@@ -501,17 +508,17 @@ footer
     width: 100%;
     
   }
-  #populaires a
+  .heberg_populaires a
   {
-    width: 90%;
+    height:30%;
+    width: 70%;
     margin: 20px;
   }
   .descr_heberg_populaires
   {
     flex-direction: row;
-    height: 70px;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
   }
   .heberg_soleil_matin , .heberg_bleu_blanc ,.heberg_coeur_eau
   {
@@ -525,41 +532,109 @@ footer
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
     width: 100%;
-    height: 280px;
+    height: 180px;
   }
-  #bloc_activite
+
+  .marseille_activites
   {
-    margin: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
   }
+  .bloc1 , .bloc2
+  {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .lien_port 
+  {
+    height: 40%;
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .lien_calanques
+  {
+    width: 40%;
+  }
+  .lien_promegues ,.bloc1 .lien_frioul
+  {
+    height: 48%;
+    margin-top: 20px;
+  }
+  .lien_promegues img , .lien_notre_dame img
+  {
+    height: 15vw;
+  }
+  .bloc2 .lien_notre_dame 
+  {
+    height: 48%;
+  }
+  .bloc2 .lien_longchamp
+  {
+    height: 48%;
+    margin-top: 20px;
+  }
+  .lien_frioul img , .lien_longchamp img 
+  {
+    height: 13vw;
+  }
+  
  }
-/* Règles applicables pour un écran d'une largeur allant de 375 pixels à 700 pixels */
-@media all and (max-width: 700px){
-  body
-  {
-    margin: 0px;
+/* Règles applicables pour un écran d'une largeur à 560 pixels */
+@media all and (max-width: 560px){
+  body{
+    margin: 0;
   }
-  #entete
-  {
+  #entete{
     display: block;
-    margin: 0px;
-    padding: 0px;
+  }
+  header, main{
+    padding: 0;
   }
   #logo{
     width: 35%;
     padding-left: 10px;
-     }
-  .inscription{
-      position: absolute;
-      top: 15px;
-      right: 10px;
-     }
+  }
   nav ul{
-      padding: 20px 0 20px 0;
-      width: 100%;
-      justify-content: space-around;
-      border-bottom: 4px solid #F2F2F2;
-      
-    }
+    padding: 40px 0 20px 0;
+    width: 100%;
+    justify-content: space-around;
+    border-bottom: 2px solid #F2F2F2;
+  }
+  nav ul li a 
+  {
+    align-items:center;
+    width: 50%;
+    margin-right: 0px;
+  }
+  nav li a:hover{
+    color: #0065FC;
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+  }
+  #inscription{
+    position: absolute;
+    top: 39px;
+    right: 10px;
+  }
+  #inscription{
+    position: absolute;
+    top: 14px;
+    right: 15px;
+  }
+  #inscr{
+    padding: 0px;
+  }
+  header h2{
+    margin-top: 25px;
+    font-size: 1.3em;
+    padding: 0 15px 0 15px;
+  }
+  header p{
+    font-size: 1em;
+    padding-left: 15px;
+  }
+  
   .icon
     {
       display :flex;  
@@ -570,20 +645,16 @@ footer
     padding-right: 50px;
     padding-left: 50px;
   }
-  nav li a:hover{
-    color: #0065FC;
-    border-bottom: 2px solid #0065FC;
-    border-top: none; 
-   }
   .section_recherche
   {
     justify-content: center;
     align-items: center;
-    padding-left: 10px;
+    margin-bottom: 10px;
   }
   .recherche
   {
     margin-left: 0px;
+    padding-left: 10px;
      }
   .btn_recherche span
   {
@@ -593,6 +664,7 @@ footer
   main {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     margin: 0px;
   }
   
@@ -603,27 +675,30 @@ footer
     justify-content: center;
     border-radius: 0;
     margin-left: 0;
-}
+  }
 .titre_populaires{
     width: 100%;
     padding: 0;
     justify-content: space-around;
 }
-
 .heberg_populaires a{
     width: 100%;
     margin-bottom: 15px;
 }
 .img_populaires img
 {
-  width: 220px;
+  width: 150px;
   height: 100%;
 }
 .heberg_soleil_matin , .heberg_bleu_blanc , .heberg_coeur_eau
 {
     width: 100%;
-    height: 180px;
+    height: 150px;
 }
+.heberg_populaires .etoiles
+    {
+      margin:10px 10px 10px 0px;
+    }
 
 .heberg_populaires
 {
@@ -632,89 +707,103 @@ footer
 }
 
 #hebergsection{
-  width: 100%;
-  background-color: white;
-}
-#hebergsection .descr_hotel{
-  padding: 0 0 0 20px;
-}
-.descr_hotel h2 , {
-  
-  margin: 25px 0 20px 0;
-}
-.best_hebergement .etoiles
-{
-  margin-left: 25px;
-}
-.best_hebergement img
-{
-  height: 140px;
-}
-#hebergsection a{
-  width: 90%;
-  margin-bottom: 30px;
- }
-.cannebiere ,.hotel_mouettes,.hotel_port
-{
-  width:100%;
-  
-}
-.hotel_mer, .auberge_panier,.hotel_Amina{
-  width:100%;
-}
-
-#hebergements .afficherPlus{
-  padding: 0 0 10px 20px;
-}
-  
-.marseille_activities{
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .best_hebergement .descr_hotel{
+        padding: -1 0 0 20px;
+    }
+    .descr_hotel h2{
+        font-size: 1.3em;
+        margin: 25px 0 20px 0;
+    }
+    .best_hebergement .etoiles
+    {
+      margin:10px 10px 10px 10px;
+    }
+    .best_hebergement{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    #hebergsection a  {
+        width: 100%;
+    }
+    
+    .best_hebergement img{
+        height: 110px;
+    }
+    #hebergsection figure
+    {
+      margin: 0px;
+      width: 85%;
+    }
+    .hotel_mouettes , .hotel_cannebiere , .hotel_port {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        height: 210px;
+    }
+    .hotel_mer , .auberge_panier ,.hotel_Amina{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    #hebergsection .afficherPlus{
+        padding: 0 0 10px 20px;
+    }
+.marseille_activites{
   flex-direction: column;
-  height: 120%;
   align-items: center;
 }
-.titre_activities{
+.titre_activites{
   margin: 0 0 0 18px;
 }
-.marseille_activities .lien_vieux_port{
-  width: 90%;
+.lien_port{
+  height:270px ;
+  width: 100%;
   margin-bottom: 25px;
 }
-.bloc1{
-  width: 90%;
+.bloc1 , .bloc2{
+  width: 100%;
   margin-bottom: 25px;
+  margin-top: 25px;
 }
-.lien_promegues{
+.lien_promegues , .lien_longchamp{
+  height: 270px;
+  width: 100%;
   margin-bottom: 25px;
 }
 .lien_calanques{
-  width: 90%;
+  height: 270px;
+  width: 100%;
   margin-bottom: 25px;
 }
-.bloc2{
-  width: 90%;
+.lien_notre_dame ,.lien_frioul{
+  height: 270px;
+  width: 100%;
   margin-bottom: 25px;
 }
-.lien_notre_dame{
-  margin-bottom: 25px;
+.marseille_activites img{
+  height: 38vw;
 }
-.marseille_activities img{
-  height: 35vw;
-}
-.marseille_activities h4{
-  padding-left: 10px;
+.marseille_activites h4{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1em;
 }
   
   /*--- mise en forme footer---*/
-  
-  .nos_hebergements , .about
-  {
+  footer{
+    margin-top: 40px;
+}
+.footer{
     display: block;
-   }
-
-  .footer{
-    display: flex; 
-    flex-direction: column;
-    background-color: #F2F2F2;
-    
-  }
+    margin-left: 20px;
+}
  }
