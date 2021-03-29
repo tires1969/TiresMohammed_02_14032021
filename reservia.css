@@ -6,7 +6,7 @@ body
   width: 100%;
   margin: auto;
 }
-header{
+header {
   padding: 0 20px 0 20px;
 }
 #entete{
@@ -51,6 +51,7 @@ header p{
 .recherche
 {
   margin-left: 20px;
+  font-size: 1.2em;
 }
 .barre_recherche
 {
@@ -171,7 +172,7 @@ main
 }
 #hebergsection h3
 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-left: 30px;
 }
 .best_hebergement
@@ -227,7 +228,7 @@ figure
 }
 #hebergsection a
 { 
-  width: 30%;
+  width: 32%;
   color: #0c0b0b;
   text-decoration-line: none;
 }
@@ -541,10 +542,14 @@ nav ul{
     flex-wrap: wrap;
     margin: 0px;
   }
-  .bloc1 , .bloc2
+  .bloc1
   {
     width: 50%;
-    margin-bottom: 30px;
+  }
+  .bloc2
+  {
+    width: 50%;
+    margin-top: 30px;
   }
   .lien_port 
   {
@@ -552,18 +557,26 @@ nav ul{
     width: 40%;
     margin-bottom: 20px;
   }
+  .lien_calanques img
+  {
+    height: 48vw;
+  }
+  .lien_port img 
+  {
+    height:38vw ;
+  }
   .lien_calanques
   {
     width: 40%;
   }
-  .lien_promegues ,.bloc1 .lien_frioul
+  .bloc1 .lien_frioul
   {
     height: 48%;
     margin-top: 20px;
   }
   .lien_promegues img , .lien_notre_dame img
   {
-    height: 15vw;
+    height: 20vw;
   }
   .bloc2 .lien_notre_dame 
   {
@@ -576,7 +589,7 @@ nav ul{
   }
   .lien_frioul img , .lien_longchamp img 
   {
-    height: 13vw;
+    height: 20vw;
   }
   
  }
@@ -585,10 +598,11 @@ nav ul{
   body{
     margin: 0;
   }
-  #entete{
+  #entete
+  {
     display: block;
   }
-  header, main{
+  header , .recherche{
     padding: 0;
   }
   #logo{
@@ -599,17 +613,21 @@ nav ul{
     padding: 40px 0 20px 0;
     width: 100%;
     justify-content: space-around;
+    
+  }
+  nav ul li
+  {
+    width: 50%;
+    text-align: center;
+    padding:20px;
     border-bottom: 2px solid #F2F2F2;
   }
-  nav ul li a 
+  nav ul li:hover
   {
-    align-items:center;
-    width: 50%;
-    margin-right: 0px;
+    border-bottom:2px solid #0065FC;
   }
-  nav li a:hover{
+  nav ul li a:hover{
     color: #0065FC;
-    border-bottom: 2px solid #0065FC;
     border-top: none;
   }
   #inscription{
@@ -764,28 +782,24 @@ nav ul{
   margin: 0 0 0 18px;
 }
 .lien_port{
-  height:270px ;
-  width: 100%;
+  width: 98%;
   margin-bottom: 25px;
 }
 .bloc1 , .bloc2{
-  width: 100%;
+  width: 98%;
   margin-bottom: 25px;
   margin-top: 25px;
 }
 .lien_promegues , .lien_longchamp{
-  height: 270px;
-  width: 100%;
+  width: 98%;
   margin-bottom: 25px;
 }
 .lien_calanques{
-  height: 270px;
-  width: 100%;
+  width: 98%;
   margin-bottom: 25px;
 }
 .lien_notre_dame ,.lien_frioul{
-  height: 270px;
-  width: 100%;
+  width: 98%;
   margin-bottom: 25px;
 }
 .marseille_activites img{
@@ -793,9 +807,9 @@ nav ul{
 }
 .marseille_activites h4{
   display: flex;
-  justify-content: center;
   padding: 10px;
   font-size: 1em;
+  font-weight: bolder;
 }
   
   /*--- mise en forme footer---*/
