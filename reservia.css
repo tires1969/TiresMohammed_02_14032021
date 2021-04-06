@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 10px;
 }
 nav{
   display: flex;
@@ -30,13 +31,14 @@ nav ul{
   text-decoration-line: none;
   color: rgb(51, 47, 47);
 }
+
 #inscr{
   text-decoration-line: none;
   padding: 20px;
   color: #0065FC;
   font-weight: bold;
 }
-nav li a:hover{
+ul li a:hover{
   color: #0065FC;
   border-top: 2px solid #0065FC;
 }
@@ -87,7 +89,7 @@ header p{
   background-color: #0065FC;
   color: white;
   height:40px;
-  width: 90px;
+  width: 130px;
 }
 .icon /* propriete pour loupe bouton recherche*/
 {
@@ -731,7 +733,7 @@ nav ul{
         margin: 0px;
     }
     .best_hebergement .descr_hotel{
-        padding: -1 0 0 20px;
+        padding: 0px 0px 0px 20px;
     }
     .descr_hotel h2{
         font-size: 1.3em;
@@ -787,8 +789,8 @@ nav ul{
 }
 .bloc1 , .bloc2{
   width: 98%;
-  margin-bottom: 25px;
-  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .lien_promegues , .lien_longchamp{
   width: 98%;
