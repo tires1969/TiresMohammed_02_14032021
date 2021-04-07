@@ -53,12 +53,12 @@ header p{
 .recherche
 {
   margin-left: 20px;
-  font-size: 1.2em;
 }
 .barre_recherche
 {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 .icone_map
 {
@@ -102,6 +102,8 @@ header p{
   display: flex;  
   flex-wrap: wrap;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom:10px ;
 }
 .section_filtre p
 {
@@ -204,6 +206,7 @@ figure
    }
 .best_hebergement .descr_hotel ,h4{
   margin: 0px -1px 10px 5px;
+  font-weight: bolder;
 }
 .best_hebergement .descr_hotel, p{
   margin: 10px 10px 0px 5px;
@@ -262,7 +265,7 @@ figure
 }
 .heberg_populaires img{
   width: 125px;
-  height: 140px;
+  height: 120px;
   object-fit: cover;
   display: flex;
   border-radius: 20px 0 0 20px;
@@ -281,11 +284,13 @@ figure
 }
 .descr_heberg_populaires h4{
   margin: 0 0 10px 0;
+  font-weight: 900;
 }
 .descr_heberg_populaires p{
   margin: 0;
 }
 .heberg_populaires .etoiles{
+  margin: 10px 10px 10px 0px;
   color: #0065FC;
 }
 .heberg_populaires .etoiles span{
@@ -312,6 +317,9 @@ figure
     display: flex;
     justify-content: space-between;
 }
+.marseille_activites h4{
+  margin-left: 20px;
+}
 .lien_port{
     text-decoration-line: none;
     color: black;
@@ -325,7 +333,7 @@ figure
 }
 .vieux_port img{
     width: 100%;
-    height: 35vw;
+    height: 34vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -367,7 +375,7 @@ figure
 }
 .frioul img{
     width: 100%;
-    height: 9vw;
+    height: 10vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -381,7 +389,7 @@ figure
 }
 .calanques img{
     width: 100%;
-    height: 35vw;
+    height: 34vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -423,7 +431,7 @@ figure
 }
 .longchamp img{
     width: 100%;
-    height: 9vw;
+    height: 10vw;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -603,6 +611,7 @@ nav ul{
   #entete
   {
     display: block;
+    padding-top: 0px;
   }
   header , .recherche{
     padding: 0;
@@ -733,7 +742,7 @@ nav ul{
         margin: 0px;
     }
     .best_hebergement .descr_hotel{
-        padding: 0px 0px 0px 20px;
+        padding: 0px 0px 0px 0px;
     }
     .descr_hotel h2{
         font-size: 1.3em;
@@ -809,7 +818,7 @@ nav ul{
 }
 .marseille_activites h4{
   display: flex;
-  padding: 10px;
+  padding-left: 10px;
   font-size: 1em;
   font-weight: bolder;
 }
